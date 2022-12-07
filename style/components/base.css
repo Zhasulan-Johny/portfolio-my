@@ -1,0 +1,12 @@
+body {
+    background-color: #1c1b1b;
+}
+
+.header-line {
+    display: flex;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}

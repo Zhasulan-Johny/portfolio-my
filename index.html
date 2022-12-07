@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-line">
+            <div class="profile">
+                <img class="profile-pic" src="images/potfolio-table.jpg" alt="">
+                <div class="profile-down">
+                    <div class="pic-circle">
+                        <img class="profile-my--pic" src="images/zhasik-krasavchik.jpeg" alt="">
+                    </div>
+                    <h4 class="name">Жасулан Шетенов</h4>
+                    <p class="profession">блог front-end разработчика</p>
+                    <div class="portfolio-socials">
+                        <a target="_blank" href="https://www.instagram.com/invites/contact/?i=30gt8k24mjap&utm_content=2n4vltb"><img class="social-insta" src="icons/instagram-profile.svg" alt=""></a>
+                        <a target="_blank" href="https://vk.com/kentzidanaaa"><img class="social-vk" src="icons/vk-profile.svg" alt=""></a>
+                        <a target="_blank" href="https://ru.pinterest.com/"><img class="social-printerest" src="icons/pinterest-profile.svg" alt=""></a>
+                    </div>
+                    <p class="portfolio-subtitle">
+                        Front-end разработчик. Практик верстки сайтов. 
+                        Созданием сайтов начал заниматься в 2022 году. Проходил курсы в ИТ школе "Decode" и во время учебы 
+                        создал разные сайты различной сложности, но главным сайтом и проектом является тот который вы смотрите прямо сейчас.
+                    </p>
+
+                    <div class="portfolio-buttons">
+                        <button class="portfolio-btn">
+                            <span class="btn-shadow"></span>
+                            <a class="portfolio-click" href="myprojects.html">Мои работы</a></button>
+                        <button class="portfolio-btn" onclick="openContacts()">
+                            <span class="btn-shadow"></span>
+                            <a class="portfolio-click">Написать мне</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right-page">
+                <div class="header-nav">
+                    <div class="header-nav-left">
+                        <ul class="menu">
+                            <li class="has-submenu"><a class="nav-link" href="">Главная</a>
+                                <div class="drop-down">
+                                    <ul class="sub-menu">
+                                        <li class="nav-link--li"><a class="nav-link" href="">Домой</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <ul class="menu">
+                            <li class="has-submenu"><a class="nav-link" href="">Статьи</a>
+                                <div class="drop-down">
+                                    <ul class="sub-menu">
+                                        <li class="nav-link--li"><a class="nav-link" href="">Создание сайтов</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <ul class="menu">
+                            <li class="has-submenu"><a class="nav-link" href="">Обо мне</a>
+                                <div class="drop-down">
+                                    <ul class="sub-menu">
+                                        <li class="nav-link--li"><a class="nav-link" href="">Создание сайтов</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="menu">
+                            <li class="has-submenu"><a class="nav-link" href="">Реклама</a>
+                                <div class="drop-down">
+                                    <ul class="sub-menu">
+                                        <li class="nav-link--li"><a class="nav-link" href="">Сотрудничество</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Связаться</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="menu-last">
+                            <li class="has-submenu"><a class="nav-link-right" href="">Профиль</a>
+                                <div class="drop-down">
+                                    <ul class="sub-menu">
+                                        <li class="nav-link--li"><a class="nav-link" href="">Регистрация</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Логин</a></li>
+                                        <li class="nav-link--li"><a class="nav-link" href="">Выход</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-nav-right">
+                        <input class="nav-search" type="text" placeholder="Поиск по блогу">
+                    </div>
+                </div>
+
+
+                <div class="stories">
+                    <div class="container">
+                        <div class="stories-line">
+                            <div class="stories-block" onclick="openStories()">
+                                <span class="stories-shadow"></span>
+                                <span class="stories-shadow--down"></span>
+                                <p class="stories-name">Отдыхаю на природе</p>
+                                <p class="stories-date">21.09.2020</p>
+                                <img class="stories-img" src="images/stories3.svg" alt="">
+                                
+                            </div>
+
+                            <div class="stories-block" onclick="openStories2()">
+                                <span class="stories-shadow"></span>
+                                <span class="stories-shadow--down"></span>
+                                <p class="stories-name">Заканчиваю <br> сложный проект</p>
+                                <p class="stories-date">15.09.2020</p>
+                                <img class="stories-img" src="images/stories4.svg" alt="">
+                            </div>
+
+                            <div class="stories-block" onclick="openStories()">
+                                <span class="stories-shadow"></span>
+                                <span class="stories-shadow--down"></span>
+                                <p class="stories-name">Переехал в новую <br> квартиру</p>
+                                <p class="stories-date">11.09.2020</p>
+                                <img class="stories-img" src="images/stories3.svg" alt="">
+                                
+                            </div>
+
+                            <div class="stories-block" onclick="openStories2()">
+                                <span class="stories-shadow"></span>
+                                <span class="stories-shadow--down"></span>
+                                <p class="stories-name">Осень пришла!</p>
+                                <p class="stories-date">28.08.2020</p>
+                                <img class="stories-img" src="images/stories4.svg" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <input class="comment-type" type="text" placeholder="Напишите что-нибудь">
+                            <div class="photo-btn">
+                                <img src="icons/photo-btn.svg" alt="">
+                            </div>
+
+                            <div class="send-btn">
+                                <img src="icons/arrow-btn.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="container">
+                        <div class="letter-block">
+                            <h3 id="letter" class="letter"></h3>
+                        </div>
+                        <div class="statistic">
+                            <div class="stat-block">
+                                <h3 data-num="30000" class="stat-num" >0</h3>
+                                <p class="stat-desc">посетителей за месяц</p>
+                            </div>
+
+                            <div class="stat-block">
+                                <h3 data-num="25000" class="stat-num">0</h3>
+                                <p class="stat-desc">выпусников за все время</p>
+                            </div>
+
+                            <div class="stat-block">
+                                <h3 data-num="200" class="stat-num">0</h3>
+                                <p class="stat-desc">наших сотрудников</p>
+                            </div>
+
+                            <div class="stat-block">
+                                <h3 data-num="340" class="stat-num">0</h3>
+                                <p class="stat-desc">выполненных проектов</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="black-card">
+                                <p class="card-description">Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. 
+                                    Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. 
+                                    Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                                    Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                                    Egestas ornare vel volutpat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, officiis!
+                                </p>
+                                    <p class="card-date">9.11.2022</p>
+                            </div>
+                        </div>
+
+
+                        <div class="blog" data-aos="new-animation" data-aos-offset="50">
+                            
+                            <div class="blog-main--pic">
+                                <span class="blog-shadow"></span>
+                                <h3 class="blog-main--title">Как писать код быстро и безболезненно?</h3>
+                                <img class="blog-img" src="images/blog-1-q.svg" alt="">
+                            </div>
+                            <div class="blog-text">
+                                <h3 class="blog-title">Как писать код быстро и безболезненно?</h3>
+                                <p class="blog-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. 
+                                    Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                                    Fusce arcu sodales lacinia eu auctor nunc nam id. 
+                                    Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                                <div class="blog-down--line">
+                                    <div class="blog-down--left">
+                                        <p class="blog-date">9.11.2022</p>
+                                        <p class="blog-topic">создание сайтов</p>
+                                    </div>
+
+                                    <a class="blog-click" href="">читать</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="blog" data-aos="new-animation" data-aos-offset="50">
+                            <div class="blog-main--pic">
+                                <img class="play-btn" onclick="openVideo()" src="icons/play-btn.png" alt="">
+                                <img class="blog-img" src="images/blog-2-q.svg" alt="">
+                            </div>
+                            <div class="blog-text">
+                                <h3 class="blog-title">Купил новый ноутбук за 150 000 руб.</h3>
+                                <div class="blog-down--line">
+                                    <div class="blog-down--left">
+                                        <p class="blog-date">21.06.2020</p>
+                                        <p class="blog-topic">продвижение видео</p>
+                                    </div>
+
+                                    <a class="blog-click" href="">оставить комментарий</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="blog" data-aos="new-animation" data-aos-offset="50">
+                            <div class="blog-main--pic">
+                                <span class="blog-shadow"></span>
+                                <h3 class="blog-main--title">Как я сходил на FrontEnd Conf 2021</h3>
+                                <img class="blog-img" src="images/blog-3-q.svg" alt="">
+                            </div>
+                            <div class="blog-text">
+                                <h3 class="blog-title">Как я сходил на FrontEnd Conf 2021</h3>
+                                <p class="blog-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Elementum volutpat orci turpis urna. 
+                                    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                                    Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                                    Egestas ornare vel volutpat.</p>
+                                <div class="blog-down--line">
+                                    <div class="blog-down--left">
+                                        <p class="blog-date">21.06.2020</p>
+                                        <p class="blog-topic">создание сайтов</p>
+                                    </div>
+
+                                    <a class="blog-click" href="">читать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+
+                <div class="skills">
+                    <div class="container">
+                        <h3 class="skills-text">Мои навыки</h3>
+                        <div class="skills-line">
+                            <img class="skills-image" data-aos="flips" data-aos-duration="1200" data-aos-once="false" data-aos-offset="80" src="images/html-img.png" alt="">
+                            <img class="skills-image" data-aos="flips" data-aos-duration="1200" data-aos-once="false" data-aos-offset="80" src="images/css-img.png" alt="">
+                            <img class="skills-image" data-aos="flips" data-aos-duration="1200" data-aos-once="false" data-aos-offset="80" src="images/js-img.png" alt="">
+                            <img class="skills-image" data-aos="flips" data-aos-duration="1200" data-aos-once="false" data-aos-offset="80" src="images/react-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                        
+            
+                
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="stories-window" id="stories-window">
+            <div class="stories-black--window" onclick="closeStories()"></div>
+            <img class="stories-img-window" src="images/stories3.svg" alt="">
+        </div>
+
+        <div class="stories-window2" id="stories-window2">
+            <div class="stories-black--window2" onclick="closeStories2()"></div>
+            <img class="stories-img-window2" src="images/stories4.svg" alt="">
+        </div>
+
+        <div class="contacts-window" id="contacts-window">
+            <div class="contacts-black--window" onclick="closeContacts()"></div>
+            <form class="contacts-block" action="" method="POST">
+                <input class="contacts-name" name="name" required type="text" placeholder="Ваше имя" onclick="clickInput()">
+                <input class="contacts-email" name="email" required type="text" name="" id="" placeholder="Ваш e-mail" onclick="clickInput2()">
+                <textarea class="contacts-text" name="text" id="" cols="1" rows="1" placeholder="Текст сообщения" onclick="clickInput3()"></textarea>
+                <input class="contacts-send" type="submit" value="Отправить">
+                <div class="contacts-info">
+                    <p class="email-info">e-mail:<a class="email-info--text" href="">zhasulan.shetenov@inbox.ru </a></p>
+                    <p class="phone-info">тел:<a class="phone-info--num" href="">+7-700-283-46-29</a></p>
+                </div>
+                <img class="x-close" onclick="closeContacts()" src="icons/x-close.png" alt="">
+            </form>
+        </div>
+    </header>
+
+
+    
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/typeWriter.js"></script>
+    <script src="js/openVideo.js"></script>
+    <script src="js/stories.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

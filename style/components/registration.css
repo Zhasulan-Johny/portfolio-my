@@ -1,0 +1,103 @@
+.reg-block {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    background-color: #202020;
+    padding: 50px 80px 80px 80px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.reg-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.reg-name, .reg-email, .reg-nickname, .reg-password {
+    background-color: #202020;
+    width: 340px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    outline: none;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.reg-name:focus{
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.reg-email:focus{
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.reg-nickname:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.reg-password:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.reg-password2:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.reg-send {
+    width: 95px;
+    height: 30px;
+    background-color: #3137C9;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    cursor: pointer;
+}
+
+.reg-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-info {
+    margin-bottom: 10px;
+}
+
+.email-info, .phone-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.email-info--text, .phone-info--num {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B3B3B3;
+    margin-left: 5px;
+}

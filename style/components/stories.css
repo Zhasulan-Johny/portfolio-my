@@ -1,0 +1,123 @@
+.stories {
+    padding-top: 60px;
+}
+
+.stories-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stories-block {
+    width: 22%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+}
+
+.stories-shadow {
+    position: absolute;
+    background-color: #000;
+    opacity: .4;
+    transition: .5s;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+
+.stories-shadow--down {
+    position: absolute;
+    background-color: #000;
+    opacity: .4;
+    transition: .5s;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.stories-block:hover .stories-shadow {
+    width: 100%;
+    height: 100%;
+}
+
+.stories-block:hover .stories-shadow--down {
+    width: 100%;
+    height: 100%;
+}
+
+.stories-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories-name {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    line-height: 14px;
+}
+
+.stories-date {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+/* comment======================================= */
+
+.comment {
+    display: flex;
+    background-color: #121212;
+    padding: 30px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+.comment-type {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #D2D2D2;
+}
+
+.photo-btn {
+    width: 44px;
+    height: 40px;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.send-btn {
+    width: 44px;
+    height: 40px;
+    background-color: #3137C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}

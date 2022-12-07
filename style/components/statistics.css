@@ -1,0 +1,26 @@
+.statistic {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.stat-block {
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #fff;
+}
+
+.stat-num {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stat-desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}

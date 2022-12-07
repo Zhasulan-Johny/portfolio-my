@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header-nav">
+        <div class="header-nav-left">
+            <ul class="menu">
+                <li class="has-submenu"><a class="nav-link" href="">Главная</a>
+                    <div class="drop-down">
+                        <ul class="sub-menu">
+                            <li class="nav-link--li"><a class="nav-link" href="">Домой</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="menu">
+                <li class="has-submenu"><a class="nav-link" href="">Статьи</a>
+                    <div class="drop-down">
+                        <ul class="sub-menu">
+                            <li class="nav-link--li"><a class="nav-link" href="">Создание сайтов</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="menu">
+                <li class="has-submenu"><a class="nav-link" href="">Обо мне</a>
+                    <div class="drop-down">
+                        <ul class="sub-menu">
+                            <li class="nav-link--li"><a class="nav-link" href="">Создание сайтов</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li class="has-submenu"><a class="nav-link" href="">Реклама</a>
+                    <div class="drop-down">
+                        <ul class="sub-menu">
+                            <li class="nav-link--li"><a class="nav-link" href="">Сотрудничество</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Связаться</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="menu-last">
+                <li class="has-submenu"><a class="nav-link-right" href="">Профиль</a>
+                    <div class="drop-down">
+                        <ul class="sub-menu">
+                            <li class="nav-link--li"><a class="nav-link" href="">Создание сайтов</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Интернет-маркетинг</a></li>
+                            <li class="nav-link--li"><a class="nav-link" href="">Продвижение видео</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-nav-right">
+            <input class="nav-search" type="text" placeholder="Поиск по блогу">
+        </div>
+    </div>
+
+    <div class="registration">
+        <div class="container">
+                <form class="reg-block" action="<?=$BASE_URL?>/api-user/signup.php" method="POST">
+                    <h2 class="reg-title">Регистрация</h2>
+                    <input class="reg-nickname" name="nickname" required type="text" placeholder="Ваше имя">
+                    <input class="reg-email" name="email" required type="text" name="" id="" placeholder="Ваш e-mail">
+                    <input class="reg-name" name="full_name" type="text" required placeholder="Ваш nickname">
+                    <input class="reg-password" id="reg-password" type="password" name="password" required placeholder="Ваш пароль">
+                    <input class="reg-password" id="reg-password2" type="password" name="password2" required placeholder="Повторите пароль">
+                    <input class="reg-send" type="submit" value="Отправить">
+                </form>
+        </div>
+    </div>
+
+
+    <script src="js/contacts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+</html>

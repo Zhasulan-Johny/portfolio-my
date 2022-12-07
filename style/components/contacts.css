@@ -1,0 +1,125 @@
+.contacts-window {
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contacts-window.active-contacts {
+    width: 100%;
+}
+
+.contacts-window.active-contacts .contacts-block {
+    visibility: visible;
+    opacity: 1;
+    transition: .8s;
+    transform: translate(-50%, -50%);
+}
+
+.contacts-black--window {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .4;
+    z-index: 1;
+}
+
+.contacts-block {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #202020;
+    padding: 80px 80px 25px 80px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    border-radius: 5px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.contacts-name, .contacts-email, .contacts-text {
+    background-color: #202020;
+    width: 340px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    outline: none;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.contacts-name:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.contacts-email:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.contacts-text:focus {
+    border-color: #107EFF;
+    transition: .4s;
+}
+
+.contacts-send {
+    width: 95px;
+    height: 30px;
+    background-color: #3137C9;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    cursor: pointer;
+}
+
+.contacts-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-info {
+    margin-bottom: 10px;
+}
+
+.email-info, .phone-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.email-info--text, .phone-info--num {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B3B3B3;
+    margin-left: 5px;
+}
+
+.x-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
